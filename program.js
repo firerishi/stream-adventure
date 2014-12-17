@@ -1,3 +1,8 @@
+// lesson #3
+// input output
+process.stdin.pipe(process.stdout);
+
+
 // lesson #2
 // meet pipe
 var fs = require('fs');
