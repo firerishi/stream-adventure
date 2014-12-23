@@ -1,3 +1,18 @@
+// lesson #5
+// lines
+var split = require('split');
+var through = require('through');
+var tr = through(write);
+var count = 0;
+
+function write (line) { 
+	(count % 2 == 0)? console.log(line.toString().toLowerCase()): console.log(line.toString().toUpperCase());
+	count += 1;
+}
+
+process.stdin.pipe(split()).pipe(tr);
+
+
 // lesson #4
 // transform
 var through = require('through');

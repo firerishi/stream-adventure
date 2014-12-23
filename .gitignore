@@ -9,3 +9,14 @@ node_modules/through/test/auto-destroy.js
 node_modules/through/test/buffering.js
 node_modules/through/test/end.js
 node_modules/through/test/index.js
+node_modules/split/.npmignore
+node_modules/split/.travis.yml
+node_modules/split/index.js
+node_modules/split/LICENCE
+node_modules/split/package.json
+node_modules/split/readme.markdown
+node_modules/split/examples/pretty.js
+node_modules/split/test/options.asynct.js
+node_modules/split/test/partitioned_unicode.js
+node_modules/split/test/split.asynct.js
+node_modules/split/test/try_catch.asynct.js
