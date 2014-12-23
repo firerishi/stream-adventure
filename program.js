@@ -1,3 +1,27 @@
+// lesson #7
+// http server
+var http = require('http');
+var through = require('through');
+
+var write = function(buf){
+	this.queue(buf.toString().toUpperCase());
+}
+var end = function() {
+	this.queue(null);
+}
+
+var server = http.createServer(function(req, res){
+	if (req.method == 'POST') {
+		req.pipe(through(write, end)).pipe(res);	
+	}
+	else {
+		res.end('Send me a POST');
+	}
+});
+
+server.listen(process.argv[2]);
+
+
 // lesson #6
 // concat
 var concat = require('concat-stream');
