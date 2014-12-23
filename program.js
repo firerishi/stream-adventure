@@ -1,3 +1,13 @@
+// lesson #6
+// concat
+var concat = require('concat-stream');
+var rev = function(buf) {
+	console.log(buf.toString().split('').reverse().join(''));
+}
+
+process.stdin.pipe(concat(rev));
+
+
 // lesson #5
 // lines
 var split = require('split');
