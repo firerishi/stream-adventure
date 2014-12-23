@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/firerishi/stream-adventure",
   "dependencies": {
+    "split": "^0.3.2",
     "through": "^2.3.6"
   }
 }
