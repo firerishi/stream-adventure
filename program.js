@@ -1,3 +1,11 @@
+// lesson #8
+// http client
+var request = require('request');
+var r = request.post('http://localhost:8000');
+
+process.stdin.pipe(r).pipe(process.stdout);
+
+
 // lesson #7
 // http server
 var http = require('http');
