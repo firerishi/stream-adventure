@@ -1,3 +1,12 @@
+// lesson #9
+// websockets
+var ws = require('websocket-stream');
+var stream = ws("ws://localhost:8000");
+
+stream.write('hello\n');
+stream.end();
+
+
 // lesson #8
 // http client
 var request = require('request');
