@@ -1,3 +1,23 @@
+// lesson #10
+// html stream
+var trumpet = require('trumpet');
+
+var tr = trumpet();
+var through = require('through');
+
+var write = function(buf){
+	this.queue(buf.toString().toUpperCase());
+}
+var end = function() {
+	this.queue(null);
+}
+
+var loud = tr.select('.loud').createStream();
+loud.pipe(through(write, end)).pipe(loud);
+
+process.stdin.pipe(tr).pipe(process.stdout);
+
+
 // lesson #9
 // websockets
 var ws = require('websocket-stream');
