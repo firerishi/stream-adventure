@@ -1,3 +1,25 @@
+// lesson #12
+// duplexer redux
+var duplexer = require('duplexer');
+var through = require('through');
+
+module.exports = function(counter) {
+	
+	var writeable = through(write, end);
+	var counts = {};
+
+	function write(buf) {
+		counts[buf.country] = (counts[buf.country] || 0) + 1;
+	}
+
+	function end() {
+		counter.setCounts(counts);
+	}
+
+	return duplexer(writeable, counter);
+};
+
+
 // lesson #11
 // duplexer
 var spawn = require('child_process').spawn;
