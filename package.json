@@ -21,6 +21,7 @@
     "duplexer": "^0.1.1",
     "request": "^2.51.0",
     "split": "^0.3.2",
+    "stream-combiner": "^0.2.1",
     "through": "^2.3.6",
     "trumpet": "^1.7.0",
     "websocket-stream": "^1.1.1"

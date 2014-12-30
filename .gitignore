@@ -1058,3 +1058,10 @@ node_modules/duplexer/LICENCE
 node_modules/duplexer/package.json
 node_modules/duplexer/README.md
 node_modules/duplexer/test/index.js
+node_modules/stream-combiner/.npmignore
+node_modules/stream-combiner/.travis.yml
+node_modules/stream-combiner/index.js
+node_modules/stream-combiner/LICENSE
+node_modules/stream-combiner/package.json
+node_modules/stream-combiner/README.md
+node_modules/stream-combiner/test/index.js
