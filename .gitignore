@@ -1051,3 +1051,10 @@ node_modules/trumpet/test/write_end.html
 node_modules/trumpet/test/write_end.js
 node_modules/trumpet/test/write_stream.html
 node_modules/trumpet/test/write_stream.js
+node_modules/duplexer/.npmignore
+node_modules/duplexer/.travis.yml
+node_modules/duplexer/index.js
+node_modules/duplexer/LICENCE
+node_modules/duplexer/package.json
+node_modules/duplexer/README.md
+node_modules/duplexer/test/index.js
