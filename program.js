@@ -1,3 +1,12 @@
+// lesson #14
+// crypt
+var crypto = require('crypto');
+var stream = crypto.createDecipher('aes256', process.argv[2]);
+
+stream.pipe(process.stdout);
+process.stdin.pipe(stream);
+
+
 // lesson #13
 // combiner
 var combine = require('stream-combiner');
